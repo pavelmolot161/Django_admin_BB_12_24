@@ -122,6 +122,43 @@ if __name__ == '__main__':
 #               urlpatterns = [
 #                   path('menu', menu_task)                                 ### - (+)
 
+###______________________________________________________________________________________
+###
+''' - Склонирован проэкт, после этого привязан к новому репозиторию и стал отдельным проектом '''
+
+### - 21) Первым делом необходимо установить библиотеки и зависимости:
+#         - Переходим в дерикторию где расположен файл requirements.txt (UrbanDjango)
+#                        (.venv) PS D:\Rabota_12_24\Django_admin_BB_12_24> >>> cd UrbanDjango
+#         - Устанавливаем зависимости:
+#            (.venv) PS D:\Rabota_12_24\Django_admin_BB_12_24\UrbanDjango> >>> pip install -r requirements.txt
+### - 22) Устанавливаем приложение task5:
+#            (.venv) PS D:\Rabota_12_24\Django_admin_BB_12_24\UrbanDjango> >>> python manage.py startapp task5
+
+### - (23) Сменили корневую папку:
+### - Поменял структуру проэкта и определил корневую папку UrbahDjango.
+                        # 1- Откройте PyCharm.
+                        # 2 - Перейдите в меню File -> Open....
+                        # 3 - Выберите папку, которую хотите установить в качестве корня проекта.
+                        # 4 - PyCharm автоматически установит выбранную папку как корень проекта.
+
+### - _____________________________________________________________________________________________
+
+### - 19 модуль Django
+### - 24) Создали модели в task1/models:
+#              Созданы две модели: Buyer и Game.
+#              В модели Buyer добавлены поля name, balance и age.
+#              В модели Game добавлены поля title, cost, size, description, age_limited и связь с моделью Buyer
+#              через ManyToManyField.
+
+### - 25)  создание таблиц в базе данных для всех приложений из списка INSTALLED_APPS:
+
+#                     D:\Rabota_12_24\Django_admin_BB_12_24\UrbanDjango> >>> python manage.py makemigrations
+#                     D:\Rabota_12_24\Django_admin_BB_12_24\UrbanDjango> >>> python manage.py migrate
+
+### - 26)
+
+
+
 
 
 
