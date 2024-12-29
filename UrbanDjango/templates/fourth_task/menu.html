@@ -46,13 +46,12 @@
     <nav>
         {% block menu %}
         <ul>
-            <li><a href="http://127.0.0.1:8000/">Главная </a></li>
-            <li><a href="http://127.0.0.1:8000/games">Магазин </a></li>
-            <li><a href="http://127.0.0.1:8000/cart">Корзина </a></li>
+            <li><a href="{% url 'platform_task' %}">Главная</a></li>
+            <li><a href="{% url 'games_task' %}">Магазин</a></li>
+            <li><a href="{% url 'cart_task' %}">Корзина</a></li>
         </ul>
         {% endblock %}
     </nav>
-
 
     {% block content %}
         <h6> Сюда размещаем контент </h6>
@@ -68,20 +67,21 @@
 
     <!--########################################################################################################-->
 
+    <!--Вносим изменения 23.12.24-->
     <div class="button_1-container">                 <!--Кнопка внизу для навигации, не по заданию-->
-        <a href="http://127.0.0.1:8000/games">
+        <a href="{% url 'games_task' %}">
             <button class="small-button"><h4>На страничку c играми</h4></button>
         </a>
     </div>
 
      <div class="button_2-container">                <!--Кнопка внизу для навигации, не по заданию-->
-        <a href="http://127.0.0.1:8000/cart">
+        <a href="{% url 'cart_task' %}">
             <button class="small-button"><h4>На страничку c корзиной</h4></button>
         </a>
     </div>
 
          <div class="button_3-container">            <!--Кнопка внизу для навигации, не по заданию-->
-        <a href="http://127.0.0.1:8000/">
+        <a href="{% url 'platform_task' %}">
             <button class="small-button"><h4>На Главную страничку</h4></button>
         </a>
     </div>
