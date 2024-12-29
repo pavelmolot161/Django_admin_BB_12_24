@@ -18,7 +18,7 @@ Including another URLconf
 ### - 15.12.24 (+)
 ### - 20.12.24 (++)
 ### - 22.12.24 (+++)
-### - 22.12.24 (++++)
+### - 29.12.24 (++++)
 from django.contrib import admin
 from django.urls import path, include                              ### - (+)
 # from task2.views import func_temp, class_temp

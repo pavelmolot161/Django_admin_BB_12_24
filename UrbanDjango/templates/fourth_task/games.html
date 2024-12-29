@@ -20,11 +20,17 @@
 {% block content %}
     {{ block.super }}                   <!--Переносит инфу из блока content родительского класса-->
     {% for game in games %}
-    <li>
-        {{ game }}
-        <button type="button">Купить</button>
-    </li>
+        <div>
+            <h4>{{ game.title }} | {{ game.description }}. Стоимость: {{ game.cost }}</h4>
+            <button>Купить</button>     <!-- Кнопка для покупки игры -->
+        </div>
     {% endfor %}
+<!--    {% for game in games %}-->
+<!--    <li>-->
+<!--        {{ game }}-->
+<!--        <button type="button">Купить</button>-->
+<!--    </li>-->
+<!--    {% endfor %}-->
 {% endblock %}
 
 {% block footer %}
